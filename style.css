@@ -36,7 +36,8 @@ nav{
  justify-content: space-around;
 }
 li{
-  font-size: 20px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
   cursor: pointer;
   display: list-item;
@@ -131,6 +132,27 @@ p{
     transform:translateY(0px)
   }
 }
+.side{
+  display: flex;
+  width: 45%;
+  height: 70%;
+  border-radius: 12px;
+  background: gold;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  animation: go 2s ease;
+}
+@keyframes go{
+  0% {
+    opacity: 0;
+    transform:translateY(-80px)
+  }
+  100% {
+    opacity:1;
+    transform:translateY(0px)
+  }
+}
 .b-footer{
   display: flex;
   width: 100%;
@@ -149,6 +171,12 @@ p{
   margin-top: 3%;
   border-radius: 12px;
   background: rgb(184, 160, 25);
+}
+.box:hover{
+  box-shadow: 0 0 2px 2px blue;
+  -moz-box-shadow: #000000;
+  -webkit-box-shadow: #000000;
+  box-shadow: #000000;
 }
 .footer{
   display: flex;
@@ -188,5 +216,23 @@ h3{
 .contacts a{
   text-decoration: underline;
   color: rgb(193, 6, 193);
-  left: 20%;
+}
+.s-logo{
+  width: 50%;
+  height: 30%;
+  position: absolute;
+  top: 60%;
+  left: 26%;
+}
+.s-logo1 a{
+  width: 50%;
+  height: 50%;
+}
+.s-logo2 a{
+  width: 10%;
+  height: 10%;
+}
+.s-logo3 a{
+  width: 10%;
+  height: 10%;
 }
