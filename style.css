@@ -1,0 +1,192 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bg{
+  width: 100%;
+  height: 100vh;
+  z-index: -11;
+}
+header{
+  width: 100%;
+  height: 20vh;
+  background-color: rgba(58, 176, 219, 0.011);
+  position: fixed;
+  z-index: 10;
+  display: flex;
+}
+.head{
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  background: rgba(0, 0, 0, 0.684);
+  align-items: center;
+  z-index: 2;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+nav{
+  flex: 2;
+}
+.nav-links{
+  display: flex;
+ list-style: none;
+ justify-content: space-around;
+}
+li{
+  font-size: 20px;
+  font-weight: bolder;
+  cursor: pointer;
+  display: list-item;
+}
+li:hover{
+  color: rgb(28, 101, 123);
+  transition: .5s;
+  text-decoration: underline;
+}
+.start{
+  display: flex;
+  width: 10%;
+  height: 7vh;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(5, 145, 188);
+  cursor: pointer;
+}
+a{
+  text-decoration: none;
+  color: black;
+
+}
+p{
+  flex: 1;
+  font-size: 28px;
+  font-family: cursive;
+  font-weight: bolder;
+}
+.logo{
+  display: flex;
+  width: 05%;
+  height: 8vh;
+}
+.logo1{
+  display: flex;
+  width: 120%;
+  height: 9vh;
+  cursor: pointer;
+}
+.logo-bg{
+  display: flex;
+  width: 50%;
+  height: 70vh;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top:20%;
+  left:25%;
+  z-index: -3;
+}
+.logo-bg img{
+  width: 80%;
+  height: 50vh;
+}
+.intro-text{
+  width: 40%;
+  height: 30vh;
+  position: absolute;
+  top:35%;
+  left:5%;
+}
+.intro-text h1{
+  font-size: 44px;
+  font-weight:500;
+  animation: drop 2s ease;
+  color: rgb(235, 214, 96);
+}
+.intro-text p{
+  margin-top: 5px;
+  font-size: 22px;
+  animation: slide 2s ease;
+}
+@keyframes drop{
+  0% {
+    opacity: 0;
+    transform:translateY(-80px)
+  }
+  100% {
+    opacity:1;
+    transform:translateY(0px)
+  }
+}
+@keyframes slide{
+  0% {
+    opacity: 0;
+    transform:translateX(-80px)
+  }
+  100% {
+    opacity:1;
+    transform:translateY(0px)
+  }
+}
+.b-footer{
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  padding-left: 5%;
+  padding-right: 5%;
+  background: black;
+  position: absolute;
+  top:100%;
+  justify-content: space-between;
+}
+.box{
+  display: flex;
+  width: 30%;
+  height: 80%;
+  margin-top: 3%;
+  border-radius: 12px;
+  background: rgb(184, 160, 25);
+}
+.footer{
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  padding-left: 5%;
+  padding-right: 5%;
+  background: black;
+  position: absolute;
+  top:153%;
+  justify-content: center;
+}
+.f-logo{
+  display: flex;
+  width: 10%;
+  height: 10vh;
+  padding-top: 1%;
+}
+.f-logo1{
+  display: flex;
+  width: 120%;
+  height: 20vh;
+  cursor: pointer;
+}
+h3{
+  position: absolute;
+  top: 40%;
+}
+.contacts{
+  width: 20%;
+  height: 10%;
+  position: absolute;
+  top: 50%;
+  left: 41%;
+  justify-content: space-between;
+}
+.contacts a{
+  text-decoration: underline;
+  color: rgb(193, 6, 193);
+  left: 20%;
+}
