@@ -79,21 +79,22 @@ p{
   height: 9vh;
   cursor: pointer;
 }
-.logo-bg{
+.parallax{
+  background-image: url(./images/WhatsApp_Image_2023-04-20_at_12.12.54-removebg-preview.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 100vh;
   display: flex;
-  width: 50%;
-  height: 70vh;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  top:20%;
-  left:25%;
-  z-index: -3;
 }
-.logo-bg img{
-  width: 80%;
-  height: 50vh;
-}
+@media only screen and (max-device-width: 1366px) {
+  .parallax-container {
+    background-attachment: scroll;
+  }
+} 
 .intro-text{
   width: 40%;
   height: 30vh;
@@ -233,6 +234,6 @@ h3{
   height: 10%;
 }
 .s-logo3 a{
-  width: 10%;
-  height: 10%;
+  width: 10px;
+  height: 10px;
 }
