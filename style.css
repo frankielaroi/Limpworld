@@ -102,14 +102,13 @@ p{
   position: absolute;
   top:35%;
   left:5%;
-  transform: translateX(1px);
+  transform: translateX();
 }
 .intro-text h1{
   font-size: 44px;
   font-weight:500;
   animation: drop 2s ease;
   color: rgb(235, 214, 96);
-  transform: translateY(0px);
 }
 .intro-text p{
   margin-top: 5px;
@@ -148,6 +147,8 @@ p{
   top: 20%;
   left: 50%;
   animation: go 2s ease;
+  transform: translateY(3px);
+
 }
 @keyframes go{
   0% {
