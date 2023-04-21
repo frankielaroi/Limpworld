@@ -89,6 +89,7 @@ p{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transform: translate3d(10px);
 }
 @media only screen and (max-device-width: 1366px) {
   .parallax-container {
@@ -101,17 +102,21 @@ p{
   position: absolute;
   top:35%;
   left:5%;
+  transform: translateX(1px);
 }
 .intro-text h1{
   font-size: 44px;
   font-weight:500;
   animation: drop 2s ease;
   color: rgb(235, 214, 96);
+  transform: translateY(0px);
 }
 .intro-text p{
   margin-top: 5px;
   font-size: 22px;
   animation: slide 2s ease;
+  transform: translateZ(2px);
+  transform: translateZ(2px);
 }
 @keyframes drop{
   0% {
