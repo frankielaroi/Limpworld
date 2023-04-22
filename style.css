@@ -3,6 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root{
+  box-sizing: border-box;
+}
+
+*::before,*::after,*{
+  box-sizing: inherit;
+}
 .bg{
   width: 100%;
   height: 100vh;
@@ -81,7 +88,8 @@ p{
 }
 .parallax{
   background-image: url(./images/WhatsApp_Image_2023-04-20_at_12.12.54-removebg-preview.png);
-  background-size: cover;
+  background-size: 50%;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   min-height: 100vh;
@@ -108,14 +116,17 @@ p{
   font-size: 44px;
   font-weight:500;
   animation: drop 2s ease;
-  color: rgb(235, 214, 96);
+  background: linear-gradient(to top,rgb(17, 244, 248),purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .intro-text p{
   margin-top: 5px;
   font-size: 22px;
   animation: slide 2s ease;
   transform: translateZ(2px);
-  transform: translateZ(2px);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
 }
 @keyframes drop{
   0% {
@@ -137,19 +148,6 @@ p{
     transform:translateY(0px)
   }
 }
-.side{
-  display: flex;
-  width: 45%;
-  height: 70%;
-  border-radius: 12px;
-  background: gold;
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  animation: go 2s ease;
-  transform: translateY(3px);
-
-}
 @keyframes go{
   0% {
     opacity: 0;
@@ -163,46 +161,41 @@ p{
 .b-footer{
   display: flex;
   width: 100%;
-  height: 50vh;
-  padding-left: 5%;
-  padding-right: 5%;
+  height: auto;
   position: absolute;
   top:100%;
   justify-content: space-between;
+  padding: 0 30px;
 }
 .box{
   display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 30%;
-  height: 80%;
-  margin-top: 3%;
+  padding: 20PX;
   border-radius: 12px;
   background: rgba(0, 0, 0, 0.597);
   cursor: pointer;
-  justify-content: center;
   box-shadow: inset 0px 3px 5px 0px rgba(0,255,255,0.7);
 }
+
 .box:hover{
-  transform: translateX(0px);
+  /*transform: translateX(0px);*/
   box-shadow: inset 0px 2px 30px 0px rgba(0,255,255,0.7);
   transition: .5s;
 }
 .b-footer h3{
-display: flex;
-  justify-content: space-between;
+  position: static;
 }
 .box p{
- display: flex;
  font-size: 15px;
- align-items: right; 
+ margin-bottom: 40PX;
+ margin-top: 10 fgpx !important;
 }
-.mini-box{
-  width: 80%;
-  height: 50%;
- margin-top: 20%;
+.box h3{
+  margin: 0 !important;
 }
-.mini-box h3{
-  margin-top: -5%;
-}
+
 .footer{
   display: flex;
   width: 100%;
@@ -211,7 +204,7 @@ display: flex;
   padding-right: 5%;
   background: rgba(0, 0, 0, 0.388);
   position: absolute;
-  top:153%;
+  top:150%;
   justify-content: center;
 }
 .f-logo{
@@ -241,6 +234,12 @@ h3{
 .contacts a{
   text-decoration: underline;
   color: rgb(193, 6, 193);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.footer p{
+  position: absolute;
+  bottom: 0%;
+
 }
 /*.s-logo{
   width: 50%;
@@ -261,3 +260,101 @@ h3{
   width: 10px;
   height: 10px;
 }
+
+
+
+.inside{
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  overflow: hidden !important;
+}
+
+
+.side{
+  display: flex;
+  width: 45%;
+  height: 70%;
+  border-radius: 12px;
+  background: gold;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  animation: go 2s ease;
+  transform: translateY(3px);
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+}
+.carousel ul, .carousel li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  
+}
+.carousel{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid blue;
+}
+
+.items{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: lightskyblue;
+    color: white;
+    background-size: cover;
+    transition: all .3s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+
+.item1{
+    left: 15%;
+    transform: translateX(-100%);
+    opacity: .5;
+}
+
+.item2{
+    background-color: green;
+    left: 30%;
+    transform: translateX(-50%);
+    z-index: 1;
+    opacity: .9;
+}
+
+.item3{
+    left: 45%;
+    background-color: purple;
+    transform: translateX(-45%) scale(100%);
+    z-index: 2;
+}
+
+.item4{
+    left: 70%;
+    background-color: peru;
+    transform: translateX(-50%);
+    z-index: 1;
+    opacity: .9;
+}
+
+.item5{
+    left: 85%;
+    transform: translateX(-60%);
+    opacity: .5;
+}
+
