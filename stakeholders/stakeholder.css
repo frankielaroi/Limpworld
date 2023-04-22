@@ -1,0 +1,27 @@
+body{
+    background-image: url(../images/WhatsApp_Image_2023-04-20_at_12.12.54-removebg-preview.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translate3d(10px);
+}
+@media only screen and (max-device-width: 1366px) {
+    .parallax-container {
+      background-attachment: scroll;
+    }
+}
+.img1 {
+   
+}
+
+.img2 {
+   
+}
+img3{
+  
+}
