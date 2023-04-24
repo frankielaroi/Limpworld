@@ -238,30 +238,43 @@ h3{
 }
 .footer p{
   position: absolute;
-  bottom: 0%;
-
+  bottom: 05%;
+  font-size: 15px;
 }
-/*.s-logo{
-  width: 50%;
+.s-logo{
+  display: flex;
+  width: 20%;
   height: 30%;
   position: absolute;
   top: 60%;
-  left: 26%;
-}*/
-.s-logo1 a{
-  width: 100%;
-  height: 100vh;
+  left: 40%;
+  justify-content: space-between;
+  align-items: center;
 }
-.s-logo2 a{
-  width: 20px;
-  height: 50%;
+.s-logo1 img{
+  width: 50px;
+  cursor: pointer;
 }
-.s-logo3 a{
-  width: 10px;
-  height: 10px;
+.s-logo2 img{
+  width: 50px;
+  cursor: pointer;
 }
-
-
+.s-logo3 img{
+  width: 50px;
+  cursor: pointer;
+}
+.s-logo1  :hover{
+  width: 60px;
+  transition: .5s;
+}
+.s-logo2  :hover{
+  width: 60px;
+  transition: .5s;
+}
+.s-logo3  :hover{
+  width: 60px;
+  transition: .5s;
+}
 
 .inside{
   width: 100%;
