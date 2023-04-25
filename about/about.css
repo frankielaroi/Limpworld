@@ -1,0 +1,273 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #42455a;
+}
+:root{
+  box-sizing: border-box;
+}
+
+*::before,*::after,*{
+  box-sizing: inherit;
+}
+.bg{
+  width: 100%;
+  height: 100vh;
+  z-index: -11;
+}
+header{
+  width: 100%;
+  height: 20vh;
+  background-color: rgba(58, 176, 219, 0.011);
+  position: fixed;
+  z-index: 10;
+  display: flex;
+}
+.head{
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  background: rgba(0, 0, 0, 0.684);
+  align-items: center;
+  z-index: 2;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+nav{
+  flex: 2;
+}
+.nav-links{
+  display: flex;
+ list-style: none;
+ justify-content: space-around;
+}
+li{
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  cursor: pointer;
+  display: list-item;
+}
+li:hover{
+  color: gold;
+  transition: .5s;
+  text-decoration: underline;
+}
+.start{
+  display: flex;
+  width: 10%;
+  height: 7vh;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(5, 145, 188);
+  cursor: pointer;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+p{
+  flex: 1;
+  font-size: 25px;
+  font-family: cursive;
+  font-weight: bolder;
+  text-align: center;
+}
+.logo{
+  display: flex;
+  width: 05%;
+  height: 8vh;
+}
+.logo1{
+  display: flex;
+  width: 120%;
+  height: 9vh;
+  cursor: pointer;
+}
+.welcome{
+  display: flex;
+  width: 30%;
+  height: 40vh;
+  border-radius: 12px ;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  position: absolute;
+  left: 35%;
+  top: 30%;
+}
+.welcome h1{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+section{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section:nth-child(1){
+  color: #e0ffff;
+  }
+section:nth-child(2){
+  color: #42455a;
+  background: #e0ffff;
+} 
+section:nth-child(3){
+  color: #e0ffff;
+}
+section:nth-child(4){
+  color: #42455a;
+  background: #e0ffff;
+}
+section .container{
+  margin: 100px;
+}
+section h1{
+  font-size: 3rem;
+  margin: 20px;
+}
+section h2{
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+section .text-container{
+   display: flex;
+}
+section .text-container .text-box{
+  margin: 20px;
+  padding: 20px;
+  background: #00c2cb;
+  border-radius: 18px;
+  cursor: pointer;
+}
+section .text-container .text-box :hover{
+  transition: 1.5s;
+  box-shadow: inset 0px 2px 30px 0px rgba(2, 90, 90, 0.7);
+  border-radius: 20px;
+}
+section .text-container .text-box h3{
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 900px){
+  section h1{
+    font-size: 2rem;
+    text-align: center;
+  }
+  section .text-container{
+    flex-direction: column;
+  }
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+.footer{
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  padding-left: 5%;
+  padding-right: 5%;
+  background: rgba(0, 0, 0, 0.388);
+  position: absolute;
+  top:400%;
+  justify-content: center;
+}
+.f-logo{
+  display: flex;
+  width: 10%;
+  height: 10vh;
+  padding-top: 1%;
+}
+.f-logo1{
+  display: flex;
+  width: 120%;
+  height: 20vh;
+  cursor: pointer;
+}
+h3{
+  position: absolute;
+  top: 40%;
+}
+.contacts{
+  width: 20%;
+  height: 10%;
+  position: absolute;
+  top: 50%;
+  left: 41%;
+  justify-content: space-between;
+}
+.contacts a{
+  text-decoration: underline;
+  color: rgb(193, 6, 193);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.footer p{
+  position: absolute;
+  bottom: 05%;
+  font-size: 15px;
+}
+.s-logo{
+  display: flex;
+  width: 20%;
+  height: 30%;
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  justify-content: space-between;
+  align-items: center;
+}
+.s-logo1 img{
+  width: 50px;
+  cursor: pointer;
+}
+.s-logo2 img{
+  width: 50px;
+  cursor: pointer;
+}
+.s-logo3 img{
+  width: 50px;
+  cursor: pointer;
+}
+.s-logo1  :hover{
+  width: 60px;
+  transition: .5s;
+}
+.s-logo2  :hover{
+  width: 60px;
+  transition: .5s;
+}
+.s-logo3  :hover{
+  width: 60px;
+  transition: .5s;
+}
+
+.inside{
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  overflow: hidden !important;
+}
+
