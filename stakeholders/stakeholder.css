@@ -242,7 +242,38 @@ p{
   box-shadow: inset 0px 3px 5px 0px rgba(0,255,255,0.7);
   margin-top: 5%;
 }
-
+.seventh-width{
+  display: flex;
+  width: 80%;
+  height: 50vh;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 12px;
+  position: relative;
+  left: 10%;
+  top: 20vh;
+  padding: 10px;
+  padding-left: 3%;
+  padding-right: 5%;
+  box-shadow: inset 0px 3px 5px 0px rgba(0,255,255,0.7);
+  margin-top: 5%;
+}
+.eight-width{
+  display: flex;
+  width: 80%;
+  height: 50vh;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 12px;
+  position: relative;
+  left: 10%;
+  top: 20vh;
+  padding: 10px;
+  padding-left: 3%;
+  padding-right: 5%;
+  box-shadow: inset 0px 3px 5px 0px rgba(0,255,255,0.7);
+  margin-top: 5%;
+}
 .footer{
   display: flex;
   width: 100%;
@@ -251,9 +282,8 @@ p{
   padding-right: 5%;
   background: rgba(0, 0, 0, 0.388);
   position: absolute;
-  top:450%;
+  top:560%;
   justify-content: center;
-  
 }
 .f-logo{
   display: flex;
