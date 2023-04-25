@@ -148,11 +148,19 @@ p{
   height: 45vh;
   border-radius: 12px;
   animation: drop 1s ease-in;
-  box-shadow: inset 0px 3px 5px 0px rgba(0,255,255,0.7);
+  box-shadow: inset 0px 3px 5px 0px black;
   cursor: pointer;
+  justify-content: center;
+ 
+}
+.wri-width p{
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10%;
 }
 .wri-width:hover{
-  box-shadow: inset 0px 0px 40px 10px black;
+  box-shadow: inset 0px 0px 20px 10px black;
   transition: .5s;
   
 }
