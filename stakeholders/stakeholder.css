@@ -120,7 +120,7 @@ p{
   box-shadow: inset 0px 3px 5px 0px rgba(0,255,255,0.7);
 }
 .pic-width{
-  width: 35%;
+  width: 30%;
   height: 45vh;
   border-radius: 12px;
   animation: slide 1s ease-in;
