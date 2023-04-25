@@ -1,0 +1,18 @@
+.parallax{
+    background-image: url(../limp1.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translate3d(10px);
+  }
+  @media only screen and (max-device-width: 1366px) {
+    .parallax-container {
+      background-attachment: scroll;
+    }
+  }
