@@ -93,10 +93,10 @@ p{
   font-family: cursive;
   font-weight: bolder;
 }
-.logo{
+.logoimg{
   display: flex;
-  width: 05%;
-  height: 8vh;
+  width:10%;
+  height: 8vh%;
 }
 .logo1{
   display: flex;
