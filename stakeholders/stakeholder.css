@@ -11,7 +11,6 @@
   width: 50px;
   height: 4vh;
 }
-lo
 *::before,*::after,*{
   box-sizing: inherit;
 }
@@ -73,7 +72,7 @@ li{
   display: list-item;
 }
 li:hover{
-  color: gold;
+  color: rgb(5, 145, 188);
   transition: .5s;
   text-decoration: underline;
 }
@@ -100,7 +99,7 @@ p{
 }
 .logo{
   display: flex;
-  width: 05%;
+  width: 5%;
   height: 8vh;
 }
 .logo1{
@@ -117,11 +116,11 @@ p{
   justify-content: space-between;
   border-radius: 12px;
   position: relative;
-  left: 10%;
   top: 20vh;
   padding: 10px;
   padding-left: 3%;
   padding-right: 5%;
+  background: rgba(33, 32, 32, 0.677);
   box-shadow: inset 0px 3px 5px 0px rgba(0,255,255,0.7);
 }
 .pic-width{
@@ -183,11 +182,11 @@ p{
   justify-content: space-between;
   border-radius: 12px;
   position: relative;
-  left: 10%;
   top: 20vh;
   padding: 10px;
   padding-left: 3%;
   padding-right: 5%;
+  background: rgba(33, 32, 32, 0.677);
   box-shadow: inset 0px 3px 5px 0px rgba(0,255,255,0.7);
   margin-top: 5%;
 }
@@ -199,11 +198,11 @@ p{
   justify-content: space-between;
   border-radius: 12px;
   position: relative;
-  left: 10%;
   top: 20vh;
   padding: 10px;
   padding-left: 3%;
   padding-right: 5%;
+  background: rgba(33, 32, 32, 0.677);
   box-shadow: inset 0px 3px 5px 0px rgba(0,255,255,0.7);
   margin-top: 5%;
 }
@@ -215,11 +214,11 @@ p{
   justify-content: space-between;
   border-radius: 12px;
   position: relative;
-  left: 10%;
   top: 20vh;
   padding: 10px;
   padding-left: 3%;
   padding-right: 5%;
+  background: rgba(33, 32, 32, 0.677);
   box-shadow: inset 0px 3px 5px 0px rgba(0,255,255,0.7);
   margin-top: 5%;
 }
@@ -231,13 +230,13 @@ p{
   justify-content: space-between;
   border-radius: 12px;
   position: relative;
-  left: 10%;
   top: 20vh;
   padding: 10px;
   padding-left: 3%;
   padding-right: 5%;
   box-shadow: inset 0px 3px 5px 0px rgba(0,255,255,0.7);
   margin-top: 5%;
+  background: rgba(33, 32, 32, 0.677);
 }
 .sixth-width{
   display: flex;
@@ -247,13 +246,13 @@ p{
   justify-content: space-between;
   border-radius: 12px;
   position: relative;
-  left: 10%;
   top: 20vh;
   padding: 10px;
   padding-left: 3%;
   padding-right: 5%;
   box-shadow: inset 0px 3px 5px 0px rgba(0,255,255,0.7);
   margin-top: 5%;
+  background: rgba(33, 32, 32, 0.677);
 }
 .seventh-width{
   display: flex;
@@ -263,13 +262,13 @@ p{
   justify-content: space-between;
   border-radius: 12px;
   position: relative;
-  left: 10%;
   top: 20vh;
   padding: 10px;
   padding-left: 3%;
   padding-right: 5%;
   box-shadow: inset 0px 3px 5px 0px rgba(0,255,255,0.7);
   margin-top: 5%;
+  background: rgba(33, 32, 32, 0.677);
 }
 .eight-width{
   display: flex;
@@ -279,13 +278,13 @@ p{
   justify-content: space-between;
   border-radius: 12px;
   position: relative;
-  left: 10%;
   top: 20vh;
   padding: 10px;
   padding-left: 3%;
   padding-right: 5%;
   box-shadow: inset 0px 3px 5px 0px rgba(0,255,255,0.7);
   margin-top: 5%;
+  background: rgba(33, 32, 32, 0.677);
 }
 .footer{
   display: flex;

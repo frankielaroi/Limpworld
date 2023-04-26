@@ -1,34 +1,5 @@
-
-
-let carousel = document.querySelector('.carousel');
-let container = carousel.querySelector('.container');
-let item = carousel.querySelectorAll('.items');
-let items = [...item];
-
-window.onload = function slider(){
-    setInterval(slide, 6000)
-    function slide() {
-    
-        for (let i = 0; i < items.length; i++){
-            items.forEach((e) => {
-                e.classList.remove(`item${i + 1}`);
-            });
-            items[i].classList.add(`item${i + 1}`);
-        }            
-        let e = items.shift();
-        items.push(e);
-          
-    }
-    
-}
-
-
-
-
-
-
 function reveal() {
-  var reveals = document.querySelectorAll(".reveal");
+  var reveals = document.querySelectorAll(".s-sec");
 
   for (var i = 0; i < reveals.length; i++) {
     var windowHeight = window.innerHeight;
