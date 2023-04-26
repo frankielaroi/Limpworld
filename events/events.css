@@ -93,9 +93,9 @@ p{
   font-family: cursive;
   font-weight: bolder;
 }
-.logo{
+.logoimg{
   display: flex;
-  width: 05%;
+  width: 40px;
   height: 8vh;
 }
 .logo1{
