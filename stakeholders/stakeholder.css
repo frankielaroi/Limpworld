@@ -294,7 +294,6 @@ p{
   justify-content: space-between;
   border-radius: 12px;
   position: relative;
-  left: 10%;
   top: 20vh;
   padding: 10px;
   padding-left: 3%;
@@ -310,7 +309,7 @@ p{
   padding-right: 5%;
   background: rgba(0, 0, 0, 0.388);
   position: absolute;
-  top:560%;
+  top:615%;
   justify-content: center;
 }
 .f-logo{
